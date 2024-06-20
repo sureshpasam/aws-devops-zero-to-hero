@@ -4,8 +4,8 @@ set -e
 # Pull the Docker image from Docker Hub
 echo "pulling the docker image from the docker repo"
 
-docker pull sureshpasamawsdevops/simple-python-flask-app:
+docker pull sureshpasamawsdevops/simple-python-flask-app:latestAPP
 
 # Run the Docker image as a container
 echo "Run the docker image for 5000 port"
-docker run -d -p 5000:5000
+docker run -d -p 5000:5000 sureshpasamawsdevops/simple-python-flask-app:latestAPP
