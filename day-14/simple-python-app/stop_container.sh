@@ -1,11 +1,12 @@
 !/bin/bash
 set -e
-ids=$(docker ps -aq)
-for id in $ids
-do
-  echo "$id"
-  docker stop $id && docker rm -f $id
-done
+echo "Hi docker stopped"
+# ids=$(docker ps -aq)
+# for id in $ids
+# do
+#   echo "$id"
+#   docker stop $id && docker rm -f $id
+# done
 
 # Stop the running container (if any)
 #echo "Hi docker stopped"
