@@ -1,6 +1,6 @@
 !/bin/bash
 set -e
-echo "After pushed the image in the docker and stopped the container ####"
+echo "### After pushed the image in the docker and stopped the container ####"
 ids=$(docker ps -aq)
 for id in $ids
 do
